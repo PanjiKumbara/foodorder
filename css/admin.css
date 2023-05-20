@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper{
+    padding: 1%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.text-center{
+    margin: auto;
+    text-align: center;
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+.tbl-full{
+    width: 100%;
+}
+
+table tr th{
+    border-bottom: 1px solid black;
+    padding: 1%;
+    text-align: left;
+}
+
+table tr td{
+    padding: 1%;
+}
+
+/* .btn-primary{
+    background-color: #1e90ff;
+    padding: 1%;
+    border: solid;
+    color: white;
+    border-radius: 8px;
+} */
+
+
+.btn {
+    line-height: 31px;
+    position: relative;
+    padding: 5px 22px;
+    border: 0;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    outline: none !important;
+    -webkit-transition: 0.2s ease-out;
+    -moz-transition: 0.2s ease-out;
+    -o-transition: 0.2s ease-out;
+    -ms-transition: 0.2s ease-out;
+    transition: 0.2s ease-out;
+  }
+  
+  .btn i,
+  .btn-flat i {
+    font-size: 1.3rem;
+    line-height: inherit;
+  }
+  
+  .btn .badge {
+    margin-left: 7px;
+  }
+  
+  .z-depth-1, .btn, .btn-floating {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  }
+  
+  .z-depth-1-half, .btn:hover, .btn-floating:hover {
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  }
+  
+  .btn-default {
+    color: #fff;
+    background-color: #1e90ff;
+  }
+  
+  .btn-default:hover,
+  .btn-default:focus {
+    background-color: #2980b9 !important;
+    color: #fff !important;
+  }
+
+  .btn-success {
+    color: #fff;
+    background-color: #2ed573;
+  }
+  
+  .btn-success:hover,
+  .btn-success:focus {
+    background-color: #00b894 !important;
+    color: #fff !important;
+  }
+
+  .btn-danger {
+    color: #fff;
+    background-color: #e74c3c;
+  }
+  
+  .btn-danger:hover,
+  .btn-danger:focus {
+    background-color: #c0392b !important;
+    color: #fff !important;
+  }
+  
+  .waves-effect {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    vertical-align: middle;
+    z-index: 1;
+    will-change: opacity, transform;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+  
+  .waves-effect .waves-ripple {
+    position: absolute;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    margin-left: -10px;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 0.7s ease-out;
+    -moz-transition: all 0.7s ease-out;
+    -o-transition: all 0.7s ease-out;
+    -ms-transition: all 0.7s ease-out;
+    transition: all 0.7s ease-out;
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    -o-transition-property: -o-transform, opacity;
+    transition-property: transform, opacity;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    pointer-events: none;
+  }
+  
+  .waves-effect.waves-light .waves-ripple {
+    background-color: rgba(255, 255, 255, 0.45);
+  }
+  
+  .waves-effect.waves-red .waves-ripple {
+    background-color: rgba(244, 67, 54, 0.7);
+  }
+  
+  .waves-effect.waves-yellow .waves-ripple {
+    background-color: rgba(255, 235, 59, 0.7);
+  }
+  
+  .waves-effect.waves-orange .waves-ripple {
+    background-color: rgba(255, 152, 0, 0.7);
+  }
+  
+  .waves-effect.waves-purple .waves-ripple {
+    background-color: rgba(156, 39, 176, 0.7);
+  }
+  
+  .waves-effect.waves-green .waves-ripple {
+    background-color: rgba(76, 175, 80, 0.7);
+  }
+  
+  .waves-effect.waves-teal .waves-ripple {
+    background-color: rgba(0, 150, 136, 0.7);
+  }
+  
+  /* Firefox Bug: link not triggered */
+  a.waves-effect .waves-ripple {
+    z-index: -1;
+  }
+
+  .formbold-mb-5 {
+    margin-bottom: 20px;
+  }
+  .formbold-main-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px;
+  }
+
+  .formbold-form-wrapper {
+    margin: 0 auto;
+    max-width: 550px;
+    width: 100%;
+    background: white;
+  }
+  .formbold-form-label {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    color: #07074d;
+    margin-bottom: 12px;
+  }
+  .formbold-form-label-2 {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .formbold-form-input {
+    width: 20%;
+    padding: 12px 24px;
+    border-radius: 6px;
+    border: 1px solid #e0e0e0;
+    background: white;
+    font-weight: 500;
+    font-size: 14px;
+    color: #2d3436;
+    outline: none;
+    resize: none;
+  }
+  .formbold-form-input:focus {
+    border-color: #6a64f1;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+  }
+
+  .formbold-btn {
+    text-align: center;
+    font-size: 16px;
+    border-radius: 6px;
+    padding: 14px 32px;
+    border: none;
+    font-weight: 600;
+    background-color: #6a64f1;
+    color: white;
+    width: 100%;
+    cursor: pointer;
+  }
+  .formbold-btn:hover {
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+  }
+
+/* CSS for Menu */
+.menu{
+    border-bottom: 1px solid grey;
+}
+.menu ul{
+    list-style-type: none;
+}
+.menu ul li{
+    display: inline;
+    padding: 1%;
+}
+.menu ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #00a8ff;
+}
+.menu ul li a:hover{
+    color: #1289A7;
+}
+
+/* CSS for main-content */
+.main-content{
+    background-color: #f1f2f6;
+    padding: 3% 0;
+}
+
+.col-4{
+    width: 18%;
+    background-color: white;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+}
+
+.error{
+    color: #e74c3c;
+}
+
+.success{
+    background-color: #2ecc71;
+    width: 25%;
+    border-radius: 12px;
+    line-height: 31px;
+    position: relative;
+    padding: 5px 22px;
+    border: 0;
+    margin: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    outline: none !important;
+}
+
+.failed{
+    background-color: #e74c3c;
+    border-radius: 8px;
+    width: 25%;
+    line-height: 31px;
+    position: relative;
+    padding: 5px 22px;
+    border: 0;
+    margin: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    outline: none !important;
+}
